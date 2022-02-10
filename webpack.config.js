@@ -10,6 +10,9 @@ module.exports = {
     target: 'web',
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
+        alias: {
+            configs: path.resolve(__dirname, 'configs/'),
+        }
     },
     module: {
         rules: [
